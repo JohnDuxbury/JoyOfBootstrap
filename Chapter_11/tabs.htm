@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+$('#tab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+});
+</script>
+</head>
+
+<body>
+<br />
+<h2>Tabs</h2>
+
+<div class="well">
+	<ul class="nav nav-tabs" id="tab">
+ 		<li class="active in"><a href="#login" data-toggle="tab">Login</a></li>
+  		<li><a href="#register" data-toggle="tab">Register</a></li>
+	</ul>
+  <div class="tab-content">
+      <div class="tab-pane active" id="login">
+        <h3>Login</h3>
+        	<form class="form-horizontal"  method="POST" role="form">
+                <div class="form-group">
+					<label  for="username" class="col-sm-2 control-label"><strong>Username/Email:</strong></label>
+				   <div class="col-sm-10">
+					<input type="text" id="uname" name="username"  class="input-xlarge" style="height:32px;"/>
+				  </div>
+			   </div>
+							
+	  		<div class="form-group">
+								
+		         <label for="password" class="col-sm-2 control-label"><strong>Password:</strong></label>
+		        <div class="col-sm-10">
+		         <input type="password" id="pword" name="password" placeholder="" class="input-xlarge" style="height:32px;" />     
+                </div>
+                
+           </div>
+               
+							
+			<div class="form-group">
+							
+				<div class="col-sm-offset-1 col-sm-10"> 
+                  <label class="col-sm-2 control-label"></label>
+                  <button type="button" class="btn btn-success">Login</button>
+				</div>
+                             
+			</div>
+                       
+				            
+		</form>
+      </div>
+  
+      <div class="tab-pane" id="register">
+        <h3>Register</h3>
+        <form class="form-horizontal" method="post">
+                 <div class="form-group">
+                     <label class="col-sm-2 control-label"><strong>Username:</strong></label>
+					 <input type="text"  class="input-xlarge" style="height:32px;" name="username" id="username" />
+                     <label for="username" class="error"></label>
+                 </div>
+                
+                <div class="form-group">
+                   
+					<label class="col-sm-2 control-label"><strong>First Name:</strong></label>
+					<input type="text" class="input-xlarge" style="height:32px;" name="fname" id="fname"/>
+                    <label for="fname" class="error" ></label>
+                </div>
+                      
+                <div class="form-group">
+                   
+					<label class="col-sm-2 control-label"><strong>Last Name:</strong></label>
+				    <input type="text" class="input-xlarge" style="height:32px;" name="lname" id="lname"/>
+                    <label for="lname" class="error" ></label>
+                </div>
+                      
+                <div class="form-group">
+                   
+					<label class="col-sm-2 control-label"><strong>Email:</strong></label>
+					<input type="text" class="input-xlarge" style="height:32px;" name="email" id="email"/>
+                    <label for="email" class="error" ></label>
+                 </div>
+                 
+                <div class="form-group">
+                    
+		            <label class="col-sm-2 control-label"><strong>Password:</strong></label>
+					<input type="password" id="password1" name="password1" placeholder="" class="input-xlarge" style="height:32px;"/>
+		            <label for="password1" class="error"></label>
+				</div>	
+                
+                <div class="form-group">
+                    
+		            <label class="col-sm-2 control-label"><strong>Re-type Password:</strong></label>
+				    <input type="password" id="password2" name="password2" placeholder="" class="input-xlarge" style="height:32px;"/>
+		           <label for="password2" class="error"></label>
+				</div>	
+                
+			   <div class="form-group">
+            <label class="col-sm-2 control-label"></label> <button type="button" class="btn btn-success">Register</button>
+               </div>
+      </form>
+     
+
+    </div>
+    
+</div> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+  <body>
+<div class="container">
+<h2>Loading State</h2>
+<button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary">
+  Loading state
+</button>
+<script>
+$("#loading-example-btn").click(function() {
+    var $btn = $(this);
+    $btn.button('loading');
+
+    setTimeout(function () {
+        $btn.button('reset');
+    }, 1000);
+});
+</script>
+  </div> 
+  </body>
+</html>
